@@ -1,0 +1,101 @@
+@mixin flex() {
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+@mixin image($url) {
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.userTable{
+         .row-header{
+                margin-top: 19px;
+                .header{
+                @include flex();
+                justify-content: space-around;
+                width: 100%;
+                height: 64px;
+                background: #C6C9D5;
+                span{
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #303972;
+                }
+                .one{
+                    margin-left: 10px;
+                }
+                .two{
+                    margin-left: 120px;
+                }
+                .three{
+                    margin-left: 1px;
+                }
+                .four{
+                    margin-left: 10px;
+                }
+                .five{
+                    margin-left: 1px;
+                }
+                .six{
+                    margin-left: 1px;
+                }
+                .hidden{
+                    margin-left: 150px;
+                }
+    
+                }
+            }
+            .row-list{
+                .list{
+                    @include flex();
+                    justify-content: space-between;
+                    margin-left: 2.5rem;
+                    margin-right: 2.5rem;
+                    margin-top: 1.8vh;
+                    margin-bottom: 3.5vh;
+                    .item1{
+                       @include flex();
+                        gap: 10px;
+                        .icon1{
+                            width: 32px;
+                            height: 32px;
+                            background: #FB7D5B;
+                            border-radius: 50%;
+                            @include image('../../users/userTable/users.svg');
+                            background-size: 50%;
+                        }
+
+                    }
+                    .item7{
+                      @include flex();
+                        
+                        gap: 2px;
+                        width: 88px;
+                        height: 34px;
+                        background: #C6C9D5;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        .icon7{
+                            width: 30px;
+                            height: 30px;
+                            @include image('../../users/userTable/eye.svg');
+                            background-size: 80%;
+                        }
+                    }
+                    .text7,.text6,.text5,.text2,.text3,.text4,.text1{
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 19px;
+                        letter-spacing: -0.24px;
+                        color: #172774;
+                    }
+                }
+            }
+
+}

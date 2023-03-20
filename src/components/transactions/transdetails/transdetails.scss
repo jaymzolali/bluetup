@@ -1,0 +1,130 @@
+@mixin image($url) {
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+.box{
+    background: #Ffffff;
+    border: 1px solid #303972;
+    padding: 1rem;
+    margin: 5rem;
+    color: #303972;
+    .transhead1{
+        display: flex;
+        gap: 37rem;
+        // grid-template-columns: 80% 20%;
+        span{
+            color: #7D85AC;
+        }
+        button{
+            outline: none;
+            border: none;
+            background-color: inherit;
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            // text-decoration-line: underline;
+            color: #303972;
+            .svgg{
+                color: #7D85AC;
+                @include image('./x.svg');
+                height: 24px;
+                width: 24px;
+                left: 553px;
+                top: 23px;
+                border-radius: 0px;
+ 
+            }
+        }
+    }
+    .transhead2{
+        display: flex;
+        gap: 20rem;
+        .amount{
+            h4{
+                height: 24px;
+                width: 189px;
+                left: 92px;
+                top: 74px;
+            }
+        }
+        .receive{
+            display: flex;
+            gap: 1rem;
+            .icon{
+                height: 42px;
+                width: 42px;
+                left: 35px;
+                top: 75px;
+                @include image('./arrdown.svg');
+                background-color: #0D833C33;
+                border-radius: 50%
+                ;
+            }
+        }
+        .btn{
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            color: #303972;
+            margin-top: 1.9vh;
+            button{
+                font-family: 'Lato';
+                height: 32px;
+                width: 169px;
+                left: 396px;
+                top: 84px;
+                border-radius: 5px;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+                // text-decoration-line: underline;
+                color: #ffffff;
+                outline: none;
+                border: none;
+                background-color: #0D833C;
+
+            }
+        }
+    }
+    .transaccount{
+        display: flex;
+        gap: 12rem;
+        .account{
+            h5{
+                font-family: Lato;
+                font-size: 13px;
+                font-weight: 700;
+                line-height: 13px;
+                letter-spacing: 0em;
+                text-align: left;
+
+            }
+        }
+        .transactionin{
+            h5{
+                font-family: Lato;
+                font-size: 13px;
+                font-weight: 700;
+                line-height: 13px;
+                letter-spacing: 0em;
+                text-align: left;
+            }
+        }
+    }
+    .transorder{
+        display: flex;
+        gap: 10rem;
+    }
+    .transaddi{
+        display: flex;
+        gap: 12rem;
+    }
+}
