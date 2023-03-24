@@ -82,7 +82,8 @@ const Alltrans = () => {
                 </div>
                 </h5>
               </div>
-              <div className="hori"> <div className="a"></div> <div className="b"></div> <div className="c"></div> <div className="d"></div> <div className="e"></div> </div>
+              <div className="hori"> <div className="a"></div> <div className="b"></div> </div>
+              
              </Col>
         </Row>
          
